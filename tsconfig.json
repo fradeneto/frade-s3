@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "lib": ["es6"],
+    "allowJs": true,
+    "outDir": "./dist",
+    "rootDir": ".",
+    "removeComments": true,
+    "strict": false,
+    "typeRoots": [
+      "./node_modules/@types",
+      "./src/@types"
+    ],
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+     "@config/*": ["./src/config/*"],
+     "@controllers/*": ["./src/controllers/*"],
+     "@decorators/*": ["./src/decorators/*"],
+     "@jobs/*": ["./src/jobs/*"],
+     "@libs/*": ["./src/libs/*"],
+     "@middlewares/*": ["./src/middlewares/*"],
+     "@models/*": ["./src/models/*"],
+     "@repositories/*": ["./src/repositories/*"],
+     "@resources/*": ["./src/resources/*"],
+     "@services/*": ["./src/services/*"],
+     "@utils/*": ["./src/utils/*"],
+    }
+  },
+  "include": [
+    "./src/**/*"
+  ]
+}
